@@ -2,7 +2,15 @@
     "name": "vedtam/myfrontend",
     "description": "Custom frontend scaffolding for my apps.",
     "type": "composer-plugin",
-    "require": {},
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vedtam/myfrontend"
+        }
+    ],
+    "require": {
+      "vedtam/myfrontend":"dev-master"
+    },
     "autoload": {
          "psr-4": {
              "Vedtam\\Presets\\MyFrontend\\": "src/"
