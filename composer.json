@@ -3,10 +3,10 @@
     "description": "Custom frontend scaffolding for my apps.",
     "type": "composer-plugin",
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/vedtam/myfrontend"
-        }
+      {
+        "type": "vcs",
+        "url": "https://github.com/vedtam/myfrontend.git"
+      }
     ],
     "require": {
       "vedtam/myfrontend":"dev-master"
