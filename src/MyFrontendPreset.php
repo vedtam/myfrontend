@@ -16,7 +16,7 @@ class MyFrontendPreset extends Preset
     protected static function updateWelcomePage()
     {
         (new Filesystem)->delete(resource_path('views/welcome.blade.php'));
-        copy(__DIR__ . '/frontend-stubs/views/layouts/master.blade.php', resource_path('views/master.blade.php'));
+        copy(__DIR__ . '/frontend-stubs/master.blade.php', resource_path('views/master.blade.php'));
 
         // (new Filesystem)->copyDirectory(__DIR__.'/bootstrap-stubs/views', resource_path('views'));
     }
