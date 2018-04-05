@@ -1,7 +1,6 @@
 {
     "name": "vedtam/myfrontend",
     "description": "Custom frontend scaffolding for my apps.",
-    "type": "composer-plugin",
     "autoload": {
          "psr-4": {
              "Vedtam\\Presets\\MyFrontend\\": "src/"
