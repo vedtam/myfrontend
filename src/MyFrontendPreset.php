@@ -11,13 +11,14 @@ class MyFrontendPreset extends Preset
 {
     public static function install()
     {
-        static::updateWelcomePage();
+        static::updateFrontEnd();
     }
-    protected static function updateWelcomePage()
+    protected static function updateFrontEnd()
     {
         (new Filesystem)->delete(resource_path('views/welcome.blade.php'));
-        copy(__DIR__ . '/frontend-stubs/master.blade.php', resource_path('views/master.blade.php'));
 
-        // (new Filesystem)->copyDirectory(__DIR__.'/bootstrap-stubs/views', resource_path('views'));
+        copy(__DIR__ . '/resources/assets/sass/app.scss', resource_path('assets/sass/app.scss'));
+
+        (new Filesystem)->copyDirectory(__DIR__.'/resources/views', resource_path('views'));
     }
 }
