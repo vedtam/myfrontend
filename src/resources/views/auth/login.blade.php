@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-4">
-            <div class="card shadow">
+            <div class="card shadow mt-5">
                 <div class="card-header text-center bg-white" style="border-bottom: 0px;">
                   <img src="{{asset('/img/logo.jpg')}}" alt="" style="width:90px;">
                 </div>
